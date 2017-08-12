@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Веб-воркеры</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+	<header>
+		<h1>Пример</h1>
+		<p>Запустим очень долгий цикл и сравним, как ведут себя страница и анимация в обоих случаях.</p>
+	</header>
+
+	<section>
+		<article>
+			<h2>Без веб-воркера</h2>
+			<p>Сложные операции блокируют отрисовку, поэтому анимация будет рваной либо заморозится на какое-то время, а страница может перестать отвечать.</p>
+			<p id="result-1"></p>
+			<button type="button" id="button-1">Попробовать</button>
+		</article>
+
+		<article>
+			<h2>С веб-воркером</h2>
+			<p>Если вынести все сложные вычисления в воркер, то анимация останется гладкой, а страница не будет блокироваться.</p>
+			<p><span class="loader is-hidden" id="loader"></span><span id="result-2"></span></p>
+			<button type="button" id="button-2">Попробовать ещё раз</button>
+		</article>
+	</section>
+
+	<section>
+		<div class="fpsometer"></div>
+	</section>
+
+	<script src="./js/calc.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
+
