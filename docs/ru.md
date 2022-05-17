@@ -8,5 +8,5 @@
 
 ## Ссылки и ресурсы
 
-- [Пост в моём блоге с деталями и примерами](https://bespoyasov.me/blog/web-workers-for-better-performance/)
-- [Пример работы приложения со сравнением производительности](https://bespoyasov.me/showcase/web-workers-for-better-performance/)
+- [Пост в моём блоге с деталями и примерами](https://bespoyasov.ru/blog/web-workers-for-better-performance/)
+- [Пример работы приложения со сравнением производительности](https://bespoyasov.ru/showcase/web-workers-for-better-performance/)
