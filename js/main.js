@@ -10,7 +10,7 @@ const loaderNode = getEl("#loader");
 
 btn1Node.addEventListener("click", (e) => {
   const result = doCalc();
-  res1Node.innerText = `Выполнено за ${result} с.`;
+  res1Node.innerText = `Done! Took ${result} seconds.`;
 });
 
 btn2Node.addEventListener("click", (e) => {
@@ -22,6 +22,6 @@ btn2Node.addEventListener("click", (e) => {
 worker.onmessage = (e) => {
   if (e.data.action === "doCalc") {
     loaderNode.classList.add("is-hidden");
-    res2Node.innerText = `Выполнено за ${e.data.result} с.`;
+    res2Node.innerText = `Done! Tooks ${e.data.result} seconds.`;
   }
 };

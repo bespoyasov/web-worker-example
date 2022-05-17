@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	<title>Веб-воркеры</title>
+	<title>Using Web Workers to Boost Performance</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./css/main.css">
@@ -9,23 +9,23 @@
 
 <body>
 	<header>
-		<h1>Пример</h1>
-		<p>Запустим очень долгий цикл и сравним, как ведут себя страница и анимация в обоих случаях.</p>
+		<h1>Sample App</h1>
+		<p>Let's init a very slooooow loop and compare how the page and animation behaves in both cases.</p>
 	</header>
 
 	<section>
 		<article>
-			<h2>Без веб-воркера</h2>
-			<p>Сложные операции блокируют отрисовку, поэтому анимация будет рваной либо заморозится на какое-то время, а страница может перестать отвечать.</p>
+			<h2>Without Web Workers</h2>
+			<p>Complex calculations block the main thread so the animation is laggy, not smooth, or even frozen. The page might become unresponsive.</p>
 			<p id="result-1"></p>
-			<button type="button" id="button-1">Попробовать</button>
+			<button type="button" id="button-1">Try running</button>
 		</article>
 
 		<article>
-			<h2>С веб-воркером</h2>
-			<p>Если вынести все сложные вычисления в воркер, то анимация останется гладкой, а страница не будет блокироваться.</p>
+			<h2>With a Web Worker</h2>
+			<p>If we extract all the complex calculations in a worker, the animation stays smooth and the page keeps being responsive.</p>
 			<p><span class="loader is-hidden" id="loader"></span><span id="result-2"></span></p>
-			<button type="button" id="button-2">Попробовать ещё раз</button>
+			<button type="button" id="button-2">Try again</button>
 		</article>
 	</section>
 
